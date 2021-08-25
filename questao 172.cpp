@@ -4,7 +4,6 @@ por elementos consecutivos existem no vetor, de forma que todos os elementos da
 sequência estejam ordenados em ordem crescente. Por exemplo, no vetor (0, 6, 8,
 10, 4, 3, 5, 9, 2, 15), podemos encontrar três sequencias de três (N=3) elementos (0,
 6, 8), (6, 8, 10), (3, 5, 9) em ordem crescente.*/
-
 #include <stdio.h>
 void main(){
 	int i, num, aux = 0, k;
@@ -28,13 +27,14 @@ void main(){
 				break;
 			}
 			if(k == num-2){
+				printf("(");
 				for(j = 0; j < num; j++){
-					printf("%d", teste[j]);
+					printf(" %d ", teste[j]);
 				}
+				printf(")");
 			}
 		}
 	}
-	
 }
 
 
